@@ -1,0 +1,33 @@
+{
+    "model_name": "Sigmoid-Calibrated Random Forest",
+    "model_file": "calibrated_random_forest.joblib",
+    "model_stage": "historical_holdout_validated",
+    "feature_count": 15,
+    "feature_columns": [
+        "national_inv",
+        "in_transit_qty",
+        "min_bank",
+        "sales_1_month",
+        "sales_3_month",
+        "sales_6_month",
+        "sales_9_month",
+        "lead_time",
+        "perf_6_month_avg",
+        "perf_12_month_avg",
+        "negative_inventory_flag",
+        "missing_lead_time_flag",
+        "zero_lead_time_flag",
+        "perf_6m_sentinel_flag",
+        "perf_12m_sentinel_flag"
+    ],
+    "calibration_method": "sigmoid",
+    "classification_threshold": 0.25,
+    "threshold_status": "provisional",
+    "training_records": 12194,
+    "holdout_records": 3049,
+    "holdout_used_for_training": false,
+    "prediction_time_feature_availability_verified": false,
+    "temporal_forecasting_validated": false,
+    "python_sklearn_version": "1.9.1",
+    "saved_utc": "2026-11-17T04:52:12.571837+00:00"
+}

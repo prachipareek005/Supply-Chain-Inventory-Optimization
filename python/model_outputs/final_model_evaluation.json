@@ -1,0 +1,37 @@
+{
+    "model": "Sigmoid-Calibrated Random Forest",
+    "model_status": "holdout_evaluated",
+    "feature_count": 15,
+    "training_records": 12194,
+    "holdout_records": 3049,
+    "classification_threshold": 0.25,
+    "threshold_status": "provisional",
+    "evaluation_design": "Random stratified 80/20 development-holdout split",
+    "holdout_metrics": {
+        "Average Precision": 0.7235294838116147,
+        "ROC-AUC": 0.9440759042397167,
+        "Precision": 0.5957446808510638,
+        "Recall": 0.7713498622589532,
+        "F1-score": 0.6722689075630253,
+        "Brier Score": 0.05450479994184139,
+        "Log Loss": 0.183438783164341
+    },
+    "confusion_matrix": {
+        "true_positives": 280,
+        "false_positives": 190,
+        "false_negatives": 83,
+        "true_negatives": 2496
+    },
+    "holdout_used_for_model_selection": false,
+    "prediction_time_feature_availability_verified": false,
+    "limitations": [
+        "Data does not establish a reliable prediction timestamp.",
+        "Prediction-time feature availability is unverified.",
+        "Random holdout results do not prove future forecasting performance.",
+        "Illustrative business-cost weights are not actual company costs.",
+        "The operating threshold remains provisional.",
+        "The model may not generalize to other companies or periods.",
+        "Missing predictor values are imputed within the pipeline."
+    ],
+    "created_utc": "2026-11-17T04:49:44.477073+00:00"
+}
